@@ -1,6 +1,6 @@
 require "formula"
 
-class LibTasks < Formula
+class Libtasks < Formula
   homepage "https://github.com/apohl79/libtasks"
 
   stable do
@@ -19,7 +19,7 @@ class LibTasks < Formula
   
   def install
     mkdir "build" do
-      system "cmake", "..", *std_cmake_args
+      system "cmake", "-DDISABLE_TESTS=y", *std_cmake_args, ".."
       system "make install"
     end
   end
