@@ -4,8 +4,8 @@ class Libtasks < Formula
   homepage "https://github.com/apohl79/libtasks"
 
   stable do
-    url "https://github.com/apohl79/libtasks/archive/1.4.tar.gz"
-    sha1 "d9eaa2b0a2f3e377f353f2446d7b30a2f986f884"
+    url "https://github.com/apohl79/libtasks/archive/1.5.tar.gz"
+    sha1 "1ba4c7a2f32e9d04cac1ed2fa75828986e9d69c2"
   end
 
   head do
