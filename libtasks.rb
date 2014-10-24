@@ -18,8 +18,9 @@ class Libtasks < Formula
   depends_on "boost"
   
   def install
-    mkdir "build" do
-      system "cmake", "-DDISABLE_TESTS=y", *std_cmake_args, ".."
+    mkdir "../build" do
+      system "ln -s libtasks-1.5 ../libtasks" # fix vera++ error
+      system "cmake", "-DDISABLE_TESTS=y", *std_cmake_args, "../libtasks"
       system "make install"
     end
   end
